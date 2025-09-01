@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2: Technology Domain - Technology Sector (Solutions by stc)</title>
+    <link rel="stylesheet" href="css/step2-styles.css">
+    <style>
+        /* CSS will remain exactly the same */
+    </style>
+</head>
+<body>
+    <div class="step2-container">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-card">
+                <div class="progress-tracker">
+                    <div class="progress-line"></div>
+                    <div class="progress-fill"></div>
+                    
+                    <!-- Step 1 - Completed -->
+                    <div class="step-indicator">
+                        <div class="step-circle completed">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </div>
+                        <span class="step-label">General Info</span>
+                    </div>
+                    
+                    <!-- Step 2 - Active -->
+                    <div class="step-indicator">
+                        <div class="step-circle active">2</div>
+                        <span class="step-label">Domain</span>
+                    </div>
+                    
+                    <!-- Steps 3-7 - Inactive -->
+                    <div class="step-indicator">
+                        <div class="step-circle">3</div>
+                        <span class="step-label">Sub-Category</span>
+                    </div>
+                    
+                    <div class="step-indicator">
+                        <div class="step-circle">4</div>
+                        <span class="step-label">Pillars</span>
+                    </div>
+                    
+                    <div class="step-indicator">
+                        <div class="step-circle">5</div>
+                        <span class="step-label">Assessment</span>
+                    </div>
+                    
+                    <div class="step-indicator">
+                        <div class="step-circle">6</div>
+                        <span class="step-label">Certification</span>
+                    </div>
+                    
+                    <div class="step-indicator">
+                        <div class="step-circle">7</div>
+                        <span class="step-label">Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header Card -->
+            <div class="header-card">
+                <div class="header-bubble header-bubble-1"></div>
+                <div class="header-bubble header-bubble-2"></div>
+                <h1>Technology Domain</h1>
+                <p>Select the primary technology area for your capability assessment</p>
+            </div>
+
+            <!-- Selection Hint -->
+            <div class="selection-hint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f008c" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                </svg>
+                <div>
+                    <h4>Quick Selection</h4>
+                    <p>Choose one domain that best represents your primary expertise area</p>
+                </div>
+            </div>
+
+            <!-- Domain Selection Grid -->
+            <div id="domainGrid" class="domain-grid">
+                <!-- Domain cards will be populated here -->
+            </div>
+
+            <!-- Selected Domain Summary -->
+            <div id="selectedSummary" class="selected-summary">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f008c" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div>
+                    <span class="summary-label">Selected Domain:</span>
+                    <h4 id="selectedDomainName"></h4>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button type="button" onclick="goBack()" class="back-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Previous Step
+                </button>
+                
+                <button type="button" id="nextBtn" disabled class="next-button">
+                    Next: Sub-Category
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Progress Indicator -->
+            <div class="progress-indicator">
+                <p>Step 2 of 7 • Estimated time: 1 minute</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/step2-script.js"></script>
+
+</body>
+</html>
